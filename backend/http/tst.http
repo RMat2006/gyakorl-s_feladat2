@@ -1,0 +1,7 @@
+POST http://127.0.0.1:3000/api/saveData
+content-type: application/json
+
+{
+    "nev": "Marci",
+    "kor": "13 éves"
+}

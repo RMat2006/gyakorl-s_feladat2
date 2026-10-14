@@ -41,4 +41,17 @@ router.get('/testsql', async (request, response) => {
     }
 });
 
+const adatok = [];
+router.post('/saveData', (request, response) => {
+
+    const data = request.body;
+    
+    
+    adatok.push(data);
+    console.log(adatok)
+    response.status(200).json({
+        message: 'Sikeres mentés'
+    });
+});
+
 module.exports = router;
